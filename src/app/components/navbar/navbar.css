@@ -1,0 +1,7 @@
+.active-link .nav-link {
+  color: #ffd54f !important;
+  font-weight: 700;
+  border-bottom: 3px solid #ffd54f;
+  padding-bottom: 4px;
+}
+.navbar-brand { font-weight: 700; }

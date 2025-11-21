@@ -1,0 +1,18 @@
+<div class="container mt-3">
+
+  @if (loading) {
+    <p>Loading...</p>
+  } @else {
+    <h2>{{ recipe.title }}</h2>
+    <img [src]="recipe.image" width="400" />
+
+    <button class="btn btn-success mt-3" (click)="addFavorite()">Add to Favorites ❤️</button>
+
+    <h4 class="mt-3">Summary</h4>
+    <p [innerHTML]="recipe.summary"></p>
+
+    <h4>Instructions</h4>
+    <p [innerHTML]="recipe.instructions"></p>
+  }
+
+</div>

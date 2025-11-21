@@ -1,0 +1,7 @@
+.recipe-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.18s ease;
+}
+.recipe-card:hover { transform: translateY(-6px); box-shadow: 0 8px 30px rgba(0,0,0,0.12); }
+.card-img-top { height: 170px; object-fit: cover; }

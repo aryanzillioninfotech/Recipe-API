@@ -1,0 +1,18 @@
+@if (recipes) {
+  @if (recipes.length > 0) {
+    <div class="row g-3">
+      @for (recipe of recipes; track $index) {
+        <div class="col-md-4">
+          <a [routerLink]="['/recipe', recipe.id]">
+            <div class="card shadow-sm recipe-card">
+              <img [src]="recipe.image" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">{{ recipe.title }}</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      }
+    </div>
+  }
+}
